@@ -5,9 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.*;
 
 @Data
 @Builder
@@ -17,10 +15,18 @@ public class EmployeeDTO {
 
     private Long id;
 
+    private String name;
+
+    @Email
+    private String email;
+
+    private String department;
+
     @NotNull
     @PositiveOrZero
     private double salary;
 
     @NotEmpty
+    @Past
     private String birthDate;
 }
