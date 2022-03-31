@@ -112,7 +112,7 @@ public class EmployeeService {
     private Employee verifyIfExists(Long id) throws EmployeeNotFoundException {
         return employeeRepository
                 .findById(id)
-                .orElseThrow(() -> new EmployeeNotFoundException(id));
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee not found! ID: " + id));
     }
 
     private MessageResponseDTO createMessageResponse(String message){
