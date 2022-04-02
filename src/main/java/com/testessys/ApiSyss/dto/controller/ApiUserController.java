@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/user")
+@RequestMapping("api/v1/users")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class ApiUserController {
 
