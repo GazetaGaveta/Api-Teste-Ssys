@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/user")
@@ -15,6 +16,11 @@ import javax.validation.Valid;
 public class ApiUserController {
 
     private ApiUserService apiUserService;
+
+    @GetMapping
+    public List<ApiUserDTO> listAll(){
+        return apiUserService.listAll();
+    }
 
     @PostMapping
     public MessageResponseDTO createApiUser(@RequestBody @Valid ApiUserDTO employeeDTO){

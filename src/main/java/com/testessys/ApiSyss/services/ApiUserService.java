@@ -11,6 +11,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class ApiUserService {
@@ -20,6 +23,15 @@ public class ApiUserService {
     private final ApiUserMapper apiUserMapper = ApiUserMapper.INSTANCE;
 
     private BCryptPasswordEncoder bCryptPasswordEncoder;
+
+    public List<ApiUserDTO> listAll(){
+        List<ApiUser> allApiUsers = apiUserRepository.findAll();
+
+        return allApiUsers
+                .stream()
+                .map(apiUserMapper::toDTO)
+                .collect(Collectors.toList());
+    }
 
     public MessageResponseDTO createApiUser(ApiUserDTO apiUserDTO){
         ApiUser apiUserToSave = apiUserMapper.toModel(apiUserDTO, encodePassword(apiUserDTO.getPassword()));
