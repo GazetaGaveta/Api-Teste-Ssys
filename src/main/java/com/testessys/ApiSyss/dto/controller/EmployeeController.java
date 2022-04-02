@@ -1,4 +1,4 @@
-package com.testessys.ApiSyss.controller;
+package com.testessys.ApiSyss.dto.controller;
 
 import com.testessys.ApiSyss.dto.request.EmployeeDTO;
 import com.testessys.ApiSyss.dto.response.MessageResponseDTO;
