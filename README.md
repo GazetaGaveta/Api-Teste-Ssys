@@ -4,7 +4,7 @@ API de empregados para desafio técnico do processo seletivo da [*Ssys*](https:/
 
 ![](https://i.imgur.com/0lp8PdQ.png)
 
-# Ferramentas Utilizadas
+## Ferramentas Utilizadas
 - Java 11
 - [IntelliJ](https://www.jetbrains.com/pt-br/idea/) (IDE)
 - [Postman](https://www.postman.com/)
@@ -12,7 +12,7 @@ API de empregados para desafio técnico do processo seletivo da [*Ssys*](https:/
 - [Spring initializr](https://start.spring.io/) (Spring boot)
 - Gradlew
 
-# Dependências do projeto
+## Dependências do projeto
 - Spring Web
 - Spring Data JPA
 - H2 Database
@@ -22,6 +22,13 @@ API de empregados para desafio técnico do processo seletivo da [*Ssys*](https:/
 - [MapStruct](https://mapstruct.org/)
 - Spring Security
 - [Java JWT](https://mvnrepository.com/artifact/com.auth0/java-jwt)
+
+## Referências
+- [API REST usando Spring Boot 2, Hibernate, JPA, e H2 com Deploy no Heroku.](https://www.dio.me/articles/api-rest-usando-spring-boot-2-hibernate-jpa-e-h2-com-deploy-no-heroku)
+- [Projeto-Person-API-Rest](https://github.com/GazetaGaveta/Projeto-Person-API-Rest)
+- [Digital Innovation: Expert class - Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot](https://github.com/rpeleias-v1/personapi_dio_live_coding)
+- [Tutorial: Como criar um token JWT com Java, Spring Boot, Spring Security e JPA](https://www.youtube.com/playlist?list=PLTN1gMq8EHuIpxyecEp04TvLr3TQbzMRL)
+- [Tutorial: Como criptografar senhas com Java, Spring Boot, Spring Security e JPA](https://www.youtube.com/playlist?list=PLTN1gMq8EHuIvkz0ZdFSufK-eI0FrnkvI)
 
 
 
