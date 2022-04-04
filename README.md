@@ -35,7 +35,7 @@ Foi realizado o deploy da API em no Heroko.
 - [Tutorial: Como criar um token JWT com Java, Spring Boot, Spring Security e JPA](https://www.youtube.com/playlist?list=PLTN1gMq8EHuIpxyecEp04TvLr3TQbzMRL)
 - [Tutorial: Como criptografar senhas com Java, Spring Boot, Spring Security e JPA](https://www.youtube.com/playlist?list=PLTN1gMq8EHuIvkz0ZdFSufK-eI0FrnkvI)
 
-# **Instruções de usoo**
+# **Instruções de uso**
 
 ### Executar projeto
 (A API no heroko pode ser usada pelo link: https://api-teste-ssys.herokuapp.com/)
@@ -51,7 +51,15 @@ Isso irá retornar um token de acesso. Para utilizar esse token no Postman, ele 
 ![](https://i.imgur.com/YhlzQoV.png)
 
 ### Acessar demais requisições da api
-utilizar /api/v1/employees ou /api/v1/users
+- **GET:** */api/v1/employees* (Listar todos os empregados)
+- **POST:** */api/v1/employees* (Criar empregado)
+- **UPDATE:** */api/v1/employees/ID* (Atualizar empregado)
+- **DELETE:** */api/v1/employees/ID* (Deletar empregado)
+- **GET:** */api/v1/employees/ID* (Mostrar um empregado pelo ID)
+- **GET:** */api/v1/reports/employees/age* (Variação de idade)
+- **GET:** */api/v1/reports/employees/salary* (Vriação de salário)
+- **POST:** */api/v1/users* (Criar usuário)
+- **GET:** */api/v1/users* (Listar todos os usuários)
 
 
 
